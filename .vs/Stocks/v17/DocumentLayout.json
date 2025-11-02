@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Amir\\Github\\stocks\\Stocks\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\pages\\about.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\pages\\about.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Amir\\Github\\stocks\\Stocks\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -119,64 +103,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Stocks\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "Stocks\\Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAH8BAAAAAAAAAAAhwI8BAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T14:57:00.127Z",
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-02T21:42:11.59Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Stocks\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Stocks\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-01T14:56:22.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "About.cshtml.cs",
-              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\About.cshtml.cs",
-              "RelativeDocumentMoniker": "Stocks\\Pages\\About.cshtml.cs",
-              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\About.cshtml.cs",
-              "RelativeToolTip": "Stocks\\Pages\\About.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T14:52:51.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\About.cshtml",
-              "RelativeDocumentMoniker": "Stocks\\Pages\\About.cshtml",
-              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\About.cshtml",
-              "RelativeToolTip": "Stocks\\Pages\\About.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-01T14:52:16.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Program.cs",
-              "RelativeDocumentMoniker": "Stocks\\Program.cs",
-              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Program.cs",
-              "RelativeToolTip": "Stocks\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T14:20:18.576Z"
             }
           ]
         }

@@ -280,19 +280,6 @@ namespace Stocks.Pages
 
 
 
-
-            //19 -OKLO
-            stock = "OKLO";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 194m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
             //19 -REKR
             stock = "REKR";
             response = await client.GetStringAsync(url + stock);
@@ -318,16 +305,7 @@ namespace Stocks.Pages
             }
 
 
-            //20 - IREN
-            stock = "IREN";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 74)
-            {
-                MyStocks.Add(stock);
-            }
+    
 
 
             CheckStock("MP", 69);
@@ -335,7 +313,9 @@ namespace Stocks.Pages
             CheckStock("NVTS", 17);
             CheckStock("EOSE", 16);
             CheckStock("ARM", 183);
-
+            CheckStock("IREN", 74.6m);
+            CheckStock("IREN", 194);
+            CheckStock("IONQ", 76);
 
             MyStocks.Add("HOOD");
             MyStocks.Add("QS");
@@ -397,12 +377,14 @@ namespace Stocks.Pages
                                 case 3:
                                     ReportedStocks.Add("PLTR"); //3.11.25
                                     ReportedStocks.Add("HIMS");
+                                    ReportedStocks.Add("NVTS");
                                     break;                                    
                                 case 4:
                                     ReportedStocks.Add("UBER"); //4.11.25
                                     ReportedStocks.Add("SHOP");
                                     ReportedStocks.Add("SPOT");
-                                    ReportedStocks.Add("AND");
+                                    ReportedStocks.Add("AMD");
+                                    ReportedStocks.Add("SMCI");
                                     break;
                                 case 5:
                                     ReportedStocks.Add("HOOD"); //5.11.25
