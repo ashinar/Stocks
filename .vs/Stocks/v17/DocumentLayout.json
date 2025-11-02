@@ -1,0 +1,186 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Amir\\Github\\stocks\\Stocks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\pages\\about.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\pages\\about.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|c:\\amir\\github\\stocks\\stocks\\stocks\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E333000-7719-4E55-9C8D-7C0359C1DF8D}|Stocks\\Stocks.csproj|solutionrelative:stocks\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 21,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Stocks\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Stocks\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAH8BAAAAAAAAAAAhwI8BAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T14:57:00.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Stocks\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Stocks\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-01T14:56:22.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "About.cshtml.cs",
+              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\About.cshtml.cs",
+              "RelativeDocumentMoniker": "Stocks\\Pages\\About.cshtml.cs",
+              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\About.cshtml.cs",
+              "RelativeToolTip": "Stocks\\Pages\\About.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T14:52:51.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\About.cshtml",
+              "RelativeDocumentMoniker": "Stocks\\Pages\\About.cshtml",
+              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Pages\\About.cshtml",
+              "RelativeToolTip": "Stocks\\Pages\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-01T14:52:16.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Program.cs",
+              "RelativeDocumentMoniker": "Stocks\\Program.cs",
+              "ToolTip": "C:\\Amir\\Github\\stocks\\Stocks\\Stocks\\Program.cs",
+              "RelativeToolTip": "Stocks\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T14:20:18.576Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
