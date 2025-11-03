@@ -4,7 +4,7 @@
     ViewData["Title"] = "Stock Scanner";
 }
 
-<h2>My Stocks For Today</h2>
+<h2>@Model.StockChecked Stocks checked For Today</h2>
 
 <div>
     <div style="color:@(Model.SpyPrice > Model.SpyPriceDayBefore ? "green" : "red")">Spy price - @Model.SpyPrice , yesederday @Model.SpyPriceDayBefore </div>

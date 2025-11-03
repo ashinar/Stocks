@@ -9,6 +9,7 @@ namespace Stocks.Pages
 {
     public class IndexModel : PageModel
     {
+        public int StockChecked { get; set; }
         public decimal SpyPrice { get; set; }
         public decimal SpyPriceDayBefore { get; set; }
 
@@ -27,295 +28,58 @@ namespace Stocks.Pages
                 return;
             }
 
+            CheckStock("PL", 13.45m);
+            CheckStock("CRDO", 187.62m);
+            CheckStock("REAL", 12.81m);
+            CheckStock("XAUUSD", 4391m);
+            CheckStock("PSIX", 86.62m);
+            CheckStock("ALAB", 220m);
+            CheckStock("SEDG", 42.63m);
+            CheckStock("META", 660.68m);
+            CheckStock("HLI", 188m);
+            CheckStock("REKR", 2.71m);
 
-            using var client = new HttpClient();
 
-            //1 - PL
-            string stock = "PL";           
-            var response = await client.GetStringAsync(url + stock);
-            var data = JObject.Parse(response);
+            Thread.Sleep(500);
 
-            var price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 13.45m)
-            {
-                MyStocks.Add(stock);
-            }
 
-
-            //2 -CRDO
-            stock = "CRDO";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 187.62m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //3 -REAL
-            stock = "REAL";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 12.81m)
-            {
-                MyStocks.Add(stock);
-            }
-
-            //3 -XAUUSD
-            stock = "XAUUSD";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 4391m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //4 -PSIX
-            stock = "PSIX";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 86.62m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-
-            //5 -ALAB
-            stock = "ALAB";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 220m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-
-            //6 -ASTS
-            stock = "ASTS";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 102.93m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //5 -ALAB
-            stock = "ALAB";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 220m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-
-            //6 -LMND
-            stock = "LMND";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 60.4m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //7 -OPEN
-            stock = "OPEN";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 8.59m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //8 -SEDG
-            stock = "SEDG";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 42.63m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //9 -ONDS
-            stock = "ONDS";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 7.91m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //10 -NNE
-            stock = "NNE";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 49.50m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //11 -META
-            stock = "META";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 660.68m)
-            {
-                MyStocks.Add(stock);
-            } 
-
-
-            //13 -HLI
-            stock = "HLI";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 188m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //14 -DR
-             stock = "DR";
-             //response = await client.GetStringAsync(url + stock);
-             //data = JObject.Parse(response);
-
-             //price = data["c"]?.Value<decimal>() ?? 0;
-             //if (price < 14m)
-             //{
-             //    MyStocks.Add(stock);
-             //}
-             MyStocks.Add(stock);
-
-
-            //15 -MRVL
-            stock = "MRVL";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 95m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-            //16 - ADP
-            stock = "ADP";
-            //response = await client.GetStringAsync(url + stock);
-            //data = JObject.Parse(response);
-
-            //price = data["c"]?.Value<decimal>() ?? 0;
-            //if (price > 220m)
-            //{
-            //    MyStocks.Add(stock);
-            //}
-
-            MyStocks.Add(stock);
-
-            //17 -RTX
-            stock = "RTX";
-            //response = await client.GetStringAsync(url + stock);
-            //data = JObject.Parse(response);
-
-            //price = data["c"]?.Value<decimal>() ?? 0;
-            //if (price > 95m)
-            //{
-            //    MyStocks.Add(stock);
-            //}
-
-            MyStocks.Add(stock);
-
-
-
-            //18 - CRWD
-            stock = "CRWD";
-            //response = await client.GetStringAsync(url + stock);
-            //data = JObject.Parse(response);
-
-            //price = data["c"]?.Value<decimal>() ?? 0;
-            //if (price > 95m)
-            //{
-            //    MyStocks.Add(stock);
-            //}
-
-            MyStocks.Add(stock);
-
-
-
-            //19 -REKR
-            stock = "REKR";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 2.71m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-
-            //19 -SES
-            stock = "SES";
-            response = await client.GetStringAsync(url + stock);
-            data = JObject.Parse(response);
-
-            price = data["c"]?.Value<decimal>() ?? 0;
-            if (price > 2.53m)
-            {
-                MyStocks.Add(stock);
-            }
-
-
-    
-
-
+            CheckStock("REKR", 2.53m);
             CheckStock("MP", 69);
-            CheckStock("CIFR", 15);
+            CheckStock("CIFR", 22);
             CheckStock("NVTS", 17);
             CheckStock("EOSE", 16);
             CheckStock("ARM", 183);
             CheckStock("IREN", 74.6m);
             CheckStock("IREN", 194);
             CheckStock("IONQ", 76);
+            CheckStock("TSLA", 466);
+            CheckStock("BITF", 4.55m);
+
+
+            Thread.Sleep(500);
+
+           
+            CheckStock("DGXX", 5.69m);
+            CheckStock("LMND",7);
+            CheckStock("Bull",11);
+            CheckStock("NNE", 47);
+            CheckStock("OUST", 36);
+            CheckStock("OPEN", 7);
+            CheckStock("RR", 7.43m);
+            CheckStock("ASTS", 80);
+            CheckStock("OKLO", 144);
+            CheckStock("JOBY", 17);
+            CheckStock("CRCL", 159);
+
+            Thread.Sleep(500);
+
+   
+            CheckStock("MRVL", 94);
+            CheckStock("LAES", 7.69m);
+            CheckStock("ONDS", 7.91m);
+            CheckStock("ZIM", 16);
+            CheckStock("MNDY", 207);
+            CheckStock("ACN", 255);
 
             MyStocks.Add("HOOD");
             MyStocks.Add("QS");
@@ -323,15 +87,23 @@ namespace Stocks.Pages
             MyStocks.Add("RGTI");
             MyStocks.Add("QBTS");
             MyStocks.Add("NBIS");
+            MyStocks.Add("BBAI");
+            MyStocks.Add("NVDA");
+            MyStocks.Add("DR");
+            MyStocks.Add("ADP");
+            MyStocks.Add("RTX");
+            MyStocks.Add("CRWD");
 
             CheackReoprtDate();
         }
+
 
 
         private async Task<bool> CheckStock(string symbol,decimal minPrice = 0)
         {
             bool status = false;
             string apiKey = "d431ai1r01qvk0j9nnigd431ai1r01qvk0j9nnj0";
+            StockChecked++;
 
             using var client = new HttpClient();
             var response = await client.GetStringAsync($"https://finnhub.io/api/v1/quote?&token={apiKey}&symbol={symbol}");
@@ -390,6 +162,7 @@ namespace Stocks.Pages
                                     ReportedStocks.Add("HOOD"); //5.11.25
                                     ReportedStocks.Add("APP");
                                     ReportedStocks.Add("ARM");
+                                    ReportedStocks.Add("LYFT");
                                     break;
                                 case 19:
                                     ReportedStocks.Add("פועלים"); //19.11.25
