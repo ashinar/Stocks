@@ -1,0 +1,139 @@
+﻿@page
+@model Stocks.Pages.SectorsModel
+@{
+}
+<style>
+    :root {
+        --bg: #0f1724;
+        --card: #0b1220;
+        --accent: #7c3aed;
+        --muted: #9aa6b2;
+        --glass: rgba(255,255,255,0.04)
+    }
+
+    body {
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        margin: 0;
+        background: linear-gradient(180deg,#071025 0%, #071933 100%);
+        color: #e6eef6;
+    }
+
+    .wrap {
+        max-width: 900px;
+        margin: 48px auto;
+        padding: 24px
+    }
+
+    .head{
+        display: flex;
+        align-items: center;
+        gap: 16px
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin: 0
+    }
+
+    p.lead {
+        margin: 6px 0 18px;
+        color: var(--muted)
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+        gap: 16px
+    }
+
+    .card {
+        background: var(--card);
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+        border: 1px solid rgba(255,255,255,0.03)
+    }
+
+    .tag {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--glass);
+        font-size: 0.75rem;
+        color: var(--muted);
+    }
+
+    .title {
+        font-weight: 600;
+        margin: 8px 0 6px
+    }
+
+    .desc {
+        font-size: 0.95rem;
+        color: var(--muted);
+        line-height: 1.45
+    }
+
+    footer {
+        margin-top: 22px;
+        color: var(--muted);
+        font-size: 0.9rem
+    }
+
+    .green {
+        background-color:green;
+    }
+
+    .red {
+        background-color: red;
+    }
+</style>
+
+<div><a style="padding:20px;color:#fff" href="/">Home</a></div>
+
+<main class="wrap">
+    <div class="head">
+        <div>
+            <h1>Market</h1>
+        </div>
+        <div style="margin-left:auto" class="tag">Updated: HTML snippet</div>
+    </div>
+
+
+    <section class="grid" aria-label="Quantum computing sectors">
+        @foreach (var stock in Model.LstMArketStocks)
+        {
+            <article class="@(stock.Percent > 0 ? "card green" : "card red")">
+                <div class="title">@stock.Symbol @stock.Percent.ToString("0.00")%</div>
+                <div class="desc">@stock.Description</div>
+                <div class="">Price: @stock.CurrentPrice.ToString("0.00")</div>
+            </article>
+        }
+    </section>
+
+
+    <br />    <br />    <br />
+    <div class="head">
+        <div>
+            <h1>Quantum Computing</h1>
+        </div>
+        <div style="margin-left:auto" class="tag">Updated: HTML snippet</div>
+    </div>
+
+
+
+    <section class="grid" aria-label="Quantum computing sectors">
+        @foreach (var stock in Model.LstQuantumStocks)
+        {
+            <article class="@(stock.Percent > 0 ? "card green" : "card red")">
+                <div class="title">@stock.Symbol @stock.Percent.ToString("0.00")%</div>
+                <div class="desc">@stock.Description</div>
+                <div class="">Price: @stock.CurrentPrice.ToString("0.00")</div>
+            </article>
+        }
+    </section>
+
+
+
+
+</main>

@@ -27,3 +27,7 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Amir/Github/stocks/Stocks/Stocks/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Amir/Github/stocks/Stocks/Stocks/Pages/Sectors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VjdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

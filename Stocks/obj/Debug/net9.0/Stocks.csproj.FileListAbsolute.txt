@@ -35,3 +35,5 @@ C:\Amir\Github\stocks\Stocks\Stocks\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
 C:\Amir\Github\stocks\Stocks\Stocks\obj\Debug\net9.0\Stocks.csproj.AssemblyReference.cache
 C:\Amir\Github\stocks\Stocks\Stocks\obj\Debug\net9.0\Stocks.csproj.Up2Date
 C:\Amir\Github\stocks\Stocks\Stocks\obj\Debug\net9.0\Stocks.sourcelink.json
+C:\Amir\Github\stocks\Stocks\Stocks\bin\Debug\net9.0\Pipelines.Sockets.Unofficial.dll
+C:\Amir\Github\stocks\Stocks\Stocks\bin\Debug\net9.0\StackExchange.Redis.dll
