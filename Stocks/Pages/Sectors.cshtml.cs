@@ -35,8 +35,20 @@ namespace Stocks.Pages
             await AddStockToLIst("RGTI", "", LstQuantumStocks);
             await AddStockToLIst("QBTS", "", LstQuantumStocks);
             await AddStockToLIst("QUBT", "", LstQuantumStocks);
+
+
+
+           await StocksToCheck();
         }
 
+        private async Task StocksToCheck()
+        {
+            Stock stock = await AddStockToLIst("PL", "", LstMArketStocks);
+            if (stock.IsLoaded && stock.CurrentPrice > 13.25m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+        }
 
         private async Task<Stock> AddStockToLIst(string symbol,string description, List<Stock> lstStocks)
         {

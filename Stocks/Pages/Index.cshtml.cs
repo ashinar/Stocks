@@ -29,7 +29,7 @@ namespace Stocks.Pages
             //}
 
  
-            CheckStock("PL", 13.45m);
+          
             CheckStock("CRDO", 187.62m);
             CheckStock("REAL", 12.81m);
             CheckStock("XAUUSD", 4391m);
