@@ -96,12 +96,32 @@
         <div>
             <h1>Market</h1>
         </div>
-        <div style="margin-left:auto" class="tag">Updated: HTML snippet</div>
+        <div style="margin-left:auto" class="tag">Good day!</div>
     </div>
 
 
     <section class="grid" aria-label="Quantum computing sectors">
         @foreach (var stock in Model.LstMArketStocks)
+        {
+            <article class="@(stock.Percent > 0 ? "card green" : "card red")">
+                <div class="title">@stock.Symbol @stock.Percent.ToString("0.00")%</div>
+                <div class="desc">@stock.Description</div>
+                <div class="">Price: @stock.CurrentPrice.ToString("0.00")</div>
+            </article>
+        }
+    </section>
+
+    <br />    <br />    <br />
+
+    <div class="head">
+        <div>
+            <h1>Stocks To buy</h1>
+        </div>
+        <div style="margin-left:auto" class="tag">Dont forget to check Volume</div>
+    </div>
+
+    <section class="grid" aria-label="Stocks To buy">
+        @foreach (var stock in Model.LstStockToBuy)
         {
             <article class="@(stock.Percent > 0 ? "card green" : "card red")">
                 <div class="title">@stock.Symbol @stock.Percent.ToString("0.00")%</div>
@@ -117,7 +137,7 @@
         <div>
             <h1>Quantum Computing</h1>
         </div>
-        <div style="margin-left:auto" class="tag">Updated: HTML snippet</div>
+        <div style="margin-left:auto" class="tag">Sub Sector</div>
     </div>
 
 
