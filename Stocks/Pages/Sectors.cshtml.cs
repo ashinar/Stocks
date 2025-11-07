@@ -43,11 +43,58 @@ namespace Stocks.Pages
 
         private async Task StocksToCheck()
         {
-            Stock stock = await AddStockToLIst("PL", "", LstMArketStocks);
-            if (stock.IsLoaded && stock.CurrentPrice > 13.25m)
+            Stock stock = await AddStockToLIst("PL", "", LstStockToBuy);
+            if (stock.IsLoaded && stock.CurrentPrice > 12)
             {
                 LstStockToBuy.Add(stock);
             }
+
+
+            stock = await AddStockToLIst("META", "", LstStockToBuy); //cyclestrading  
+            if (stock.IsLoaded && stock.CurrentPrice > 622.13m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("ORCL", "", LstStockToBuy); //cyclestrading  
+            if (stock.IsLoaded && stock.CurrentPrice > 240.40m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("AMZN", "", LstStockToBuy); //cyclestrading  
+            if (stock.IsLoaded && stock.CurrentPrice > 244.90m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+
+            stock = await AddStockToLIst("CGNT", "", LstStockToBuy); //cyclestrading  
+            if (stock.IsLoaded && stock.CurrentPrice > 9)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("DRS", "", LstStockToBuy); //cyclestrading  
+            if (stock.IsLoaded && stock.CurrentPrice > 35)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+
+            stock = await AddStockToLIst("FAST", "", LstStockToBuy); //cyclestrading  
+            if (stock.IsLoaded && stock.CurrentPrice > 40)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+
         }
 
         private async Task<Stock> AddStockToLIst(string symbol,string description, List<Stock> lstStocks)

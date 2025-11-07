@@ -36,7 +36,7 @@ namespace Stocks.Pages
             CheckStock("PSIX", 86.62m);
             CheckStock("ALAB", 220m);
             CheckStock("SEDG", 42);
-            CheckStock("META", 660.68m);
+        
             CheckStock("HLI", 188m);
             CheckStock("REKR", 2.71m);
 
@@ -93,10 +93,10 @@ namespace Stocks.Pages
 
             Thread.Sleep(500);
             CheckStock("ORCL", 264);//cyclestrading  
-            CheckStock("AMZN", 242);//cyclestrading  
+     
             CheckStock("CGNT", 8.3m);//cyclestrading  
             CheckStock("DRS",33);//cyclestrading  
-            CheckStock("FAST", 39);//cyclestrading  
+    
             CheckStock("SE", 156);//cyclestrading  
             CheckStock("PLTR", 190);//cyclestrading  
             CheckStock("DGX", 182);//cyclestrading  
