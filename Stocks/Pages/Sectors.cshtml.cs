@@ -94,6 +94,14 @@ namespace Stocks.Pages
             }
 
 
+            stock = await AddStockToLIst("TEM", "", LstStockToBuy); //cyclestrading  
+            if (stock.IsLoaded && stock.CurrentPrice > 72)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+
 
         }
 
