@@ -101,6 +101,45 @@ namespace Stocks.Pages
             }
 
 
+            stock = await AddStockToLIst("TSLA", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && (stock.CurrentPrice < 402 || stock.CurrentPrice > 443))
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+            stock = await AddStockToLIst("JOBY", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 15)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("ACHR", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 8.5m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+
+            stock = await AddStockToLIst("HIMS", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice < 41)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+            stock = await AddStockToLIst("RBLX", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 101.77m) 
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("GOOG", "", LstStockToBuy); //dark pool  short ???
+            if (stock.IsLoaded && stock.CurrentPrice < 276)
+            {
+                LstStockToBuy.Add(stock);
+            }
 
 
         }

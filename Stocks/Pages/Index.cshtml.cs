@@ -69,7 +69,7 @@ namespace Stocks.Pages
             CheckStock("RR", 4.10m);
             CheckStock("ASTS", 80);
             CheckStock("OKLO", 144);//ראש וכפתיים לירידות
-            CheckStock("JOBY", 17);//לא נראה טוב כגע
+          
             CheckStock("CRCL", 159);
 
             Thread.Sleep(500);
@@ -174,24 +174,24 @@ namespace Stocks.Pages
                         case 11:
                             switch (date.Day)
                             {
-                                case 3:
-                                    ReportedStocks.Add("PLTR"); //3.11.25
-                                    ReportedStocks.Add("HIMS");
-                                    ReportedStocks.Add("NVTS");
-                                    break;                                    
-                                case 4:
-                                    ReportedStocks.Add("UBER"); //4.11.25
-                                    ReportedStocks.Add("SHOP");
-                                    ReportedStocks.Add("SPOT");
-                                    ReportedStocks.Add("AMD");
-                                    ReportedStocks.Add("SMCI");
-                                    break;
-                                case 5:
-                                    ReportedStocks.Add("HOOD"); //5.11.25
-                                    ReportedStocks.Add("APP");
-                                    ReportedStocks.Add("ARM");
-                                    ReportedStocks.Add("LYFT");
-                                    break;
+                                //case 3:
+                                //    ReportedStocks.Add("PLTR"); //3.11.25
+                                //    ReportedStocks.Add("HIMS");
+                                //    ReportedStocks.Add("NVTS");
+                                //    break;                                    
+                                //case 4:
+                                //    ReportedStocks.Add("UBER"); //4.11.25
+                                //    ReportedStocks.Add("SHOP");
+                                //    ReportedStocks.Add("SPOT");
+                                //    ReportedStocks.Add("AMD");
+                                //    ReportedStocks.Add("SMCI");
+                                //    break;
+                                //case 5:
+                                //    ReportedStocks.Add("HOOD"); //5.11.25
+                                //    ReportedStocks.Add("APP");
+                                //    ReportedStocks.Add("ARM");
+                                //    ReportedStocks.Add("LYFT");
+                                //    break;
                                 case 19:
                                     ReportedStocks.Add("פועלים"); //19.11.25
                                     break;
