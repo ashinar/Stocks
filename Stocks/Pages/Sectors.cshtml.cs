@@ -173,7 +173,7 @@ namespace Stocks.Pages
 
 
             stock = await AddStockToLIst("NNE", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && (stock.CurrentPrice < 34.8m || stock.CurrentPrice > 39.25))
+            if (stock.IsLoaded && (stock.CurrentPrice < 34.8m || stock.CurrentPrice > 39.25m))
             {
                 LstStockToBuy.Add(stock);
             }
@@ -192,4 +192,3 @@ namespace Stocks.Pages
         }
     }
 }
-)
