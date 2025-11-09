@@ -178,7 +178,19 @@ namespace Stocks.Pages
                 LstStockToBuy.Add(stock);
             }
 
-          
+            stock = await AddStockToLIst("SMR", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && (stock.CurrentPrice < 30.5m || stock.CurrentPrice > 26.77m))
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("IONQ", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && (stock.CurrentPrice > 59))
+            {
+                LstStockToBuy.Add(stock);
+            }
+
 
         }
 
