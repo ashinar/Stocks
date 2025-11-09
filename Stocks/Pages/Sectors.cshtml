@@ -153,7 +153,26 @@
         }
     </section>
 
+    <br />    <br />    <br />
+    <div class="head">
+        <div>
+            <h1>Nuclear Energy</h1>
+        </div>
+        <div style="margin-left:auto" class="tag">Sub Sector</div>
+    </div>
 
+
+
+    <section class="grid" aria-label="Nuclear Energy">
+        @foreach (var stock in Model.LstNuclearEnergyStocks)
+        {
+            <article class="@(stock.Percent > 0 ? "card green" : "card red")">
+                <div class="title">@stock.Symbol @stock.Percent.ToString("0.00")%</div>
+                <div class="desc">@stock.Description</div>
+                <div class="">Price: @stock.CurrentPrice.ToString("0.00")</div>
+            </article>
+        }
+    </section>
 
 
 </main>

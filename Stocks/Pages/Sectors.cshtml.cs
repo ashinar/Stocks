@@ -13,6 +13,8 @@ namespace Stocks.Pages
         public List<Stock> LstMArketStocks = new List<Stock>();
         public List<Stock> LstStockToBuy = new List<Stock>();
         public  List<Stock> LstQuantumStocks = new List<Stock>();
+        public List<Stock> LstNuclearEnergyStocks = new List<Stock>();
+
         public async Task OnGet()
         {
 
@@ -37,8 +39,16 @@ namespace Stocks.Pages
             await AddStockToLIst("QUBT", "", LstQuantumStocks);
 
 
+            //Nuclear Energy.
+            await AddStockToLIst("URA", "ETF", LstNuclearEnergyStocks);
+            await AddStockToLIst("NNE", "", LstNuclearEnergyStocks);
+            await AddStockToLIst("OKLO", "", LstNuclearEnergyStocks);
+            await AddStockToLIst("SMR", "", LstNuclearEnergyStocks);
+            await AddStockToLIst("CCJ", "", LstNuclearEnergyStocks);
+            await AddStockToLIst("LTBR", "", LstNuclearEnergyStocks);
 
-           await StocksToCheck();
+
+            await StocksToCheck();
         }
 
         private async Task StocksToCheck()
@@ -160,6 +170,15 @@ namespace Stocks.Pages
             {
                 LstStockToBuy.Add(stock);
             }
+
+
+            stock = await AddStockToLIst("NNE", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && (stock.CurrentPrice < 34.8m || stock.CurrentPrice > 39.25))
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+          
 
         }
 

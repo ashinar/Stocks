@@ -61,7 +61,7 @@ namespace Stocks.Pages
             CheckStock("DGXX", 5.69m);
             CheckStock("LMND",7);
             //CheckStock("BULL",11); //without Trend
-            CheckStock("NNE", 47);
+    
             CheckStock("OUST", 36);
             CheckStock("OPEN", 7);
             CheckStock("RR", 4.10m);
