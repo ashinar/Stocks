@@ -142,6 +142,25 @@ namespace Stocks.Pages
             }
 
 
+            stock = await AddStockToLIst("IREN", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 66.67m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("CIFR", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 18)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+            stock = await AddStockToLIst("OKLO","", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && (stock.CurrentPrice < 97.06m || stock.CurrentPrice > 112.65m))
+            {
+                LstStockToBuy.Add(stock);
+            }
+
         }
 
         private async Task<Stock> AddStockToLIst(string symbol,string description, List<Stock> lstStocks)
@@ -154,3 +173,4 @@ namespace Stocks.Pages
         }
     }
 }
+)

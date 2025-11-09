@@ -46,12 +46,10 @@ namespace Stocks.Pages
 
             CheckStock("REKR", 2.53m);
             CheckStock("MP", 69);
-            CheckStock("CIFR", 22);
+          
             CheckStock("NVTS", 17);
             CheckStock("EOSE", 16);
             CheckStock("ARM", 183);
-            CheckStock("IREN", 74.6m);
-            CheckStock("IREN", 194);
         
             CheckStock("TSLA", 466);
             CheckStock("BITF", 4.55m);
@@ -68,7 +66,7 @@ namespace Stocks.Pages
             CheckStock("OPEN", 7);
             CheckStock("RR", 4.10m);
             CheckStock("ASTS", 80);
-            CheckStock("OKLO", 144);//ראש וכפתיים לירידות
+      
           
             CheckStock("CRCL", 159);
 
