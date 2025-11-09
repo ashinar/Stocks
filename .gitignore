@@ -484,3 +484,8 @@ $RECYCLE.BIN/
 *.swp
 
 .vs/
+/Stocks/bin/Debug/net9.0/Stocks.dll
+/Stocks/bin/Debug/net9.0/Stocks.exe
+/Stocks/bin/Debug/net9.0/Stocks.pdb
+/Stocks/obj/Debug/net9.0/ref/Stocks.dll
+/Stocks/obj/Debug/net9.0/refint/Stocks.dll
