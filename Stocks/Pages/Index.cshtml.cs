@@ -35,7 +35,7 @@ namespace Stocks.Pages
             CheckStock("XAUUSD", 4391m);
             CheckStock("PSIX", 86.62m);
             CheckStock("ALAB", 220m);
-            CheckStock("SEDG", 42);
+           
         
             CheckStock("HLI", 188m);
             CheckStock("REKR", 2.71m);
@@ -47,7 +47,7 @@ namespace Stocks.Pages
             CheckStock("REKR", 2.53m);
             CheckStock("MP", 69);
           
-            CheckStock("NVTS", 17);
+           
             CheckStock("EOSE", 16);
             CheckStock("ARM", 183);
         
@@ -59,11 +59,11 @@ namespace Stocks.Pages
 
            
             CheckStock("DGXX", 5.69m);
-            CheckStock("LMND",7);
+     
             //CheckStock("BULL",11); //without Trend
     
             CheckStock("OUST", 36);
-            CheckStock("OPEN", 7);
+     
             CheckStock("RR", 4.10m);
             CheckStock("ASTS", 80);
       
@@ -90,13 +90,13 @@ namespace Stocks.Pages
 
 
             Thread.Sleep(500);
-            CheckStock("ORCL", 264);//cyclestrading  
+          
      
             CheckStock("CGNT", 8.3m);//cyclestrading  
             CheckStock("DRS",33);//cyclestrading  
     
             CheckStock("SE", 156);//cyclestrading  
-            CheckStock("PLTR", 190);//cyclestrading  
+   
             CheckStock("DGX", 182);//cyclestrading  
             CheckStock("INDP", 71);//cyclestrading 
             CheckStock("FORM", 48);//David Ariel
@@ -179,7 +179,6 @@ namespace Stocks.Pages
                                 //    break;                                    
                                 //case 4:
                                 //    ReportedStocks.Add("UBER"); //4.11.25
-                                //    ReportedStocks.Add("SHOP");
                                 //    ReportedStocks.Add("SPOT");
                                 //    ReportedStocks.Add("AMD");
                                 //    ReportedStocks.Add("SMCI");

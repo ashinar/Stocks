@@ -4,6 +4,7 @@ using Newtonsoft.Json.Linq;
 using Stocks.Models;
 using Stocks.Models.Stocks.Models;
 using System.Text.Json.Nodes;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Stocks.Pages
@@ -24,6 +25,7 @@ namespace Stocks.Pages
             {
                 LstStockToBuy.Add(stock);
             }
+           
 
 
             await AddStockToLIst("QQQ", "", LstMArketStocks);
@@ -53,140 +55,236 @@ namespace Stocks.Pages
 
         private async Task StocksToCheck()
         {
-            Stock stock = await AddStockToLIst("PL", "", LstStockToBuy);
-            if (stock.IsLoaded && stock.CurrentPrice > 12)
+            Stock stock = await AddStockToLIst("PL", "");
+            //if (stock.IsLoaded && stock.CurrentPrice > 12)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("META", "", LstStockToBuy); //cyclestrading  
+            //if (stock.IsLoaded && stock.CurrentPrice > 622.13m)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("ORCL", "", LstStockToBuy); //cyclestrading  + Dark Pool
+            //if (stock.IsLoaded && stock.CurrentPrice > 235)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("AMZN", "", LstStockToBuy); //cyclestrading  
+            //if (stock.IsLoaded && stock.CurrentPrice > 244.90m)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+
+            //stock = await AddStockToLIst("CGNT", "", LstStockToBuy); //cyclestrading  
+            //if (stock.IsLoaded && stock.CurrentPrice > 9)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("DRS", "", LstStockToBuy); //cyclestrading  
+            //if (stock.IsLoaded && stock.CurrentPrice > 35)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+
+            //stock = await AddStockToLIst("FAST", "", LstStockToBuy); //cyclestrading  
+            //if (stock.IsLoaded && stock.CurrentPrice > 40)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("TEM", "", LstStockToBuy); //cyclestrading  
+            //if (stock.IsLoaded && stock.CurrentPrice > 72)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("TSLA", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && (stock.CurrentPrice < 402 || stock.CurrentPrice > 443))
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+            //stock = await AddStockToLIst("JOBY", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && stock.CurrentPrice > 15)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("ACHR", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && stock.CurrentPrice > 8.5m)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+
+            //stock = await AddStockToLIst("HIMS", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && stock.CurrentPrice < 41)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+            //stock = await AddStockToLIst("RBLX", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && stock.CurrentPrice > 101.77m) 
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("GOOG", "", LstStockToBuy); //dark pool  short ???
+            //if (stock.IsLoaded && stock.CurrentPrice < 276)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("IREN", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && stock.CurrentPrice > 66.67m)
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+
+            //stock = await AddStockToLIst("OKLO","", LstStockToBuy); //dark pool  
+            //LstStockToBuy.Add(stock);
+            ////if (stock.IsLoaded && (stock.CurrentPrice < 97.06m || stock.CurrentPrice > 112.65m))
+            ////{
+            ////    LstStockToBuy.Add(stock);
+            ////}
+
+
+            //stock = await AddStockToLIst("NNE", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && (stock.CurrentPrice < 34.8m || stock.CurrentPrice > 39.25m))
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+            //stock = await AddStockToLIst("SMR", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && (stock.CurrentPrice < 30.5m || stock.CurrentPrice > 26.77m))
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("NVTS", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && (stock.CurrentPrice > 11))
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //stock = await AddStockToLIst("OPEN", "", LstStockToBuy); //dark pool  
+            //if (stock.IsLoaded && (stock.CurrentPrice > 11))
+            //{
+            //    LstStockToBuy.Add(stock);
+            //}
+
+
+            //AXON
+            //JOBY over 17
+            //ORCL
+
+            stock = await AddStockToLIst("XPEV", ""); //dark pool  
+            if (stock.IsLoaded && (stock.CurrentPrice > 24))
             {
                 LstStockToBuy.Add(stock);
             }
 
 
-            stock = await AddStockToLIst("META", "", LstStockToBuy); //cyclestrading  
-            if (stock.IsLoaded && stock.CurrentPrice > 622.13m)
+
+            stock = await AddStockToLIst("SEDG", ""); //cyclestrading
+            if (stock.IsLoaded && (stock.CurrentPrice > 35))
             {
                 LstStockToBuy.Add(stock);
             }
 
 
-            stock = await AddStockToLIst("ORCL", "", LstStockToBuy); //cyclestrading  
-            if (stock.IsLoaded && stock.CurrentPrice > 240.40m)
+            stock = await AddStockToLIst("PLTR", ""); //cyclestrading
+            if (stock.IsLoaded && (stock.CurrentPrice > 168))
             {
                 LstStockToBuy.Add(stock);
             }
 
 
-            stock = await AddStockToLIst("AMZN", "", LstStockToBuy); //cyclestrading  
-            if (stock.IsLoaded && stock.CurrentPrice > 244.90m)
+            stock = await AddStockToLIst("APLD", ""); //cyclestrading
+            if (stock.IsLoaded && (stock.CurrentPrice < 23 && stock.CurrentPrice > 14))
             {
                 LstStockToBuy.Add(stock);
             }
 
-
-
-            stock = await AddStockToLIst("CGNT", "", LstStockToBuy); //cyclestrading  
-            if (stock.IsLoaded && stock.CurrentPrice > 9)
+            stock = await AddStockToLIst("NVMI", ""); //cyclestrading
+            if (stock.IsLoaded && (stock.CurrentPrice < 291 ))
             {
                 LstStockToBuy.Add(stock);
             }
 
-
-            stock = await AddStockToLIst("DRS", "", LstStockToBuy); //cyclestrading  
-            if (stock.IsLoaded && stock.CurrentPrice > 35)
-            {
-                LstStockToBuy.Add(stock);
-            }
-
-
-
-            stock = await AddStockToLIst("FAST", "", LstStockToBuy); //cyclestrading  
-            if (stock.IsLoaded && stock.CurrentPrice > 40)
-            {
-                LstStockToBuy.Add(stock);
-            }
-
-
-            stock = await AddStockToLIst("TEM", "", LstStockToBuy); //cyclestrading  
-            if (stock.IsLoaded && stock.CurrentPrice > 72)
-            {
-                LstStockToBuy.Add(stock);
-            }
-
-
-            stock = await AddStockToLIst("TSLA", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && (stock.CurrentPrice < 402 || stock.CurrentPrice > 443))
-            {
-                LstStockToBuy.Add(stock);
-            }
-
-            stock = await AddStockToLIst("JOBY", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && stock.CurrentPrice > 15)
-            {
-                LstStockToBuy.Add(stock);
-            }
-
-
-            stock = await AddStockToLIst("ACHR", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && stock.CurrentPrice > 8.5m)
+            stock = await AddStockToLIst("IONQ", ""); //cyclestrading
+            if (stock.IsLoaded && (stock.CurrentPrice > 50))
             {
                 LstStockToBuy.Add(stock);
             }
 
 
 
-            stock = await AddStockToLIst("HIMS", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && stock.CurrentPrice < 41)
-            {
-                LstStockToBuy.Add(stock);
-            }
-
-            stock = await AddStockToLIst("RBLX", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && stock.CurrentPrice > 101.77m) 
+            stock = await AddStockToLIst("CIFR", ""); // cyclestrading
+            if (stock.IsLoaded && stock.CurrentPrice > 14)
             {
                 LstStockToBuy.Add(stock);
             }
 
 
-            stock = await AddStockToLIst("GOOG", "", LstStockToBuy); //dark pool  short ???
-            if (stock.IsLoaded && stock.CurrentPrice < 276)
+            stock = await AddStockToLIst("LMND", ""); // cyclestrading
+            if (stock.IsLoaded && stock.CurrentPrice < 69 && stock.CurrentPrice > 63.52m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+            stock = await AddStockToLIst("SHOP", ""); //cyclestrading
+            if (stock.IsLoaded && stock.CurrentPrice > 150)
             {
                 LstStockToBuy.Add(stock);
             }
 
 
-            stock = await AddStockToLIst("IREN", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && stock.CurrentPrice > 66.67m)
+            stock = await AddStockToLIst("SOFI", ""); // cyclestrading
+            if (stock.IsLoaded &&( stock.CurrentPrice < 24 ||  stock.CurrentPrice > 28))
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+            stock = await AddStockToLIst("KTOS", ""); // cyclestrading
+            if (stock.IsLoaded && (stock.CurrentPrice > 70 ))
             {
                 LstStockToBuy.Add(stock);
             }
 
 
-            stock = await AddStockToLIst("CIFR", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && stock.CurrentPrice > 18)
-            {
-                LstStockToBuy.Add(stock);
-            }
-
-            stock = await AddStockToLIst("OKLO","", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && (stock.CurrentPrice < 97.06m || stock.CurrentPrice > 112.65m))
+            stock = await AddStockToLIst("VRT", ""); // cyclestrading
+            if (stock.IsLoaded && (stock.CurrentPrice > 155))
             {
                 LstStockToBuy.Add(stock);
             }
 
 
-            stock = await AddStockToLIst("NNE", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && (stock.CurrentPrice < 34.8m || stock.CurrentPrice > 39.25m))
-            {
-                LstStockToBuy.Add(stock);
-            }
-
-            stock = await AddStockToLIst("SMR", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && (stock.CurrentPrice < 30.5m || stock.CurrentPrice > 26.77m))
-            {
-                LstStockToBuy.Add(stock);
-            }
-
-
-            stock = await AddStockToLIst("IONQ", "", LstStockToBuy); //dark pool  
-            if (stock.IsLoaded && (stock.CurrentPrice > 59))
+            stock = await AddStockToLIst("WIX", ""); // cyclestrading
+            if (stock.IsLoaded && (stock.CurrentPrice > 248))
             {
                 LstStockToBuy.Add(stock);
             }
@@ -194,12 +292,15 @@ namespace Stocks.Pages
 
         }
 
-        private async Task<Stock> AddStockToLIst(string symbol,string description, List<Stock> lstStocks)
+        private async Task<Stock> AddStockToLIst(string symbol,string description, List<Stock> lstStocks = null)
         {
             var stock = new Stock(symbol,description);
-            await stock.LoadAsync(Stock.eProviderType.Finnhub);            
+            await stock.LoadAsync(Stock.eProviderType.Finnhub);
 
-            lstStocks.Add(stock);
+            if (lstStocks != null)
+            {
+                lstStocks.Add(stock);
+            }
             return stock;
         }
     }

@@ -51,12 +51,16 @@ namespace Stocks.Models
                     _ => throw new NotImplementedException("Provider not implemented")
                 };
 
-                CurrentPrice = data.Value<decimal>("c");
-                Change = data.Value<decimal>("d");
-                Percent = data.Value<decimal>("dp");
-                Low = data.Value<decimal>("l");
-                OpenPrice = data.Value<decimal>("o");
-                PreviousClose = data.Value<decimal>("pc");
+
+                if (data != null)
+                {
+                    CurrentPrice = data.Value<decimal>("c");
+                    Change = data.Value<decimal>("d");
+                    Percent = data.Value<decimal>("dp");
+                    Low = data.Value<decimal>("l");
+                    OpenPrice = data.Value<decimal>("o");
+                    PreviousClose = data.Value<decimal>("pc");
+                }
 
 
 
@@ -67,8 +71,17 @@ namespace Stocks.Models
             {
                 string apiKey = "d431ai1r01qvk0j9nnigd431ai1r01qvk0j9nnj0";
                 using var client = new HttpClient();
-                var response = await client.GetStringAsync($"https://finnhub.io/api/v1/quote?symbol={symbol}&token={apiKey}");
-                return JObject.Parse(response);
+                var response = await client.GetAsync($"https://finnhub.io/api/v1/quote?symbol={symbol}&token={apiKey}");
+
+                if (response.StatusCode == System.Net.HttpStatusCode.TooManyRequests)
+                {
+                    Console.WriteLine($"Finnhub API limit reached for {symbol}. Waiting 1 seconds before retry...");
+                    await Task.Delay(1000);
+                    return await GetStockDataFromFinnhub(symbol);
+                }
+
+                var json = await response.Content.ReadAsStringAsync();
+                return JObject.Parse(json);
             }
         }
     }
