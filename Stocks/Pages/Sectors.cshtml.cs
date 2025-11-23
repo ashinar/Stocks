@@ -69,11 +69,7 @@ namespace Stocks.Pages
             //}
 
 
-            //stock = await AddStockToLIst("ORCL", "", LstStockToBuy); //cyclestrading  + Dark Pool
-            //if (stock.IsLoaded && stock.CurrentPrice > 235)
-            //{
-            //    LstStockToBuy.Add(stock);
-            //}
+       
 
 
             //stock = await AddStockToLIst("AMZN", "", LstStockToBuy); //cyclestrading  
@@ -119,12 +115,7 @@ namespace Stocks.Pages
             //    LstStockToBuy.Add(stock);
             //}
 
-            //stock = await AddStockToLIst("JOBY", "", LstStockToBuy); //dark pool  
-            //if (stock.IsLoaded && stock.CurrentPrice > 15)
-            //{
-            //    LstStockToBuy.Add(stock);
-            //}
-
+      
 
             //stock = await AddStockToLIst("ACHR", "", LstStockToBuy); //dark pool  
             //if (stock.IsLoaded && stock.CurrentPrice > 8.5m)
@@ -147,11 +138,6 @@ namespace Stocks.Pages
             //}
 
 
-            //stock = await AddStockToLIst("GOOG", "", LstStockToBuy); //dark pool  short ???
-            //if (stock.IsLoaded && stock.CurrentPrice < 276)
-            //{
-            //    LstStockToBuy.Add(stock);
-            //}
 
 
             //stock = await AddStockToLIst("IREN", "", LstStockToBuy); //dark pool  
@@ -198,9 +184,6 @@ namespace Stocks.Pages
 
 
             //AXON
-            //JOBY over 17
-            //ORCL
-
             stock = await AddStockToLIst("XPEV", ""); //dark pool  
             if (stock.IsLoaded && (stock.CurrentPrice > 24))
             {
@@ -264,7 +247,7 @@ namespace Stocks.Pages
 
 
             stock = await AddStockToLIst("SOFI", ""); // cyclestrading
-            if (stock.IsLoaded &&( stock.CurrentPrice < 24 ||  stock.CurrentPrice > 28))
+           // if (stock.IsLoaded &&( stock.CurrentPrice < 24 ))
             {
                 LstStockToBuy.Add(stock);
             }
@@ -289,7 +272,71 @@ namespace Stocks.Pages
                 LstStockToBuy.Add(stock);
             }
 
+            stock = await AddStockToLIst("JOBY", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 13.07m)
+            {
+                LstStockToBuy.Add(stock);
+            }
 
+            stock = await AddStockToLIst("ORCL", "", LstStockToBuy); // Dark Pool
+            if (stock.IsLoaded && stock.CurrentPrice > 217)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("APP", "", LstStockToBuy); // Dark Pool
+            if (stock.IsLoaded && stock.CurrentPrice > 529)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+            stock = await AddStockToLIst("OPEN", "", LstStockToBuy); //dark pool  short ???
+            if (stock.IsLoaded && stock.CurrentPrice > 6.5m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("IREN", "", LstStockToBuy); //dark pool  short ???
+            if (stock.IsLoaded && stock.CurrentPrice > 44)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("OKLO", "", LstStockToBuy); //dark pool  short ???
+            if (stock.IsLoaded && stock.CurrentPrice > 88)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("OKLO", "", LstStockToBuy); //dark pool  short ???
+            if (stock.IsLoaded && stock.CurrentPrice > 29)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+            stock = await AddStockToLIst("IONQ", "", LstStockToBuy); //dark pool  short ???
+            if (stock.IsLoaded && stock.CurrentPrice > 47)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+            stock = await AddStockToLIst("SOXL", "ETF", LstStockToBuy); //dark pool  short ???
+            if (stock.IsLoaded && stock.CurrentPrice > 29.50m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+
+            stock = await AddStockToLIst("RGTI", "ETF", LstStockToBuy); //dark pool  short ???
+            if (stock.IsLoaded && stock.CurrentPrice > 23.59m)
+            {
+                LstStockToBuy.Add(stock);
+            }
         }
 
         private async Task<Stock> AddStockToLIst(string symbol,string description, List<Stock> lstStocks = null)
