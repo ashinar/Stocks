@@ -140,11 +140,11 @@ namespace Stocks.Pages
 
 
 
-            //stock = await AddStockToLIst("IREN", "", LstStockToBuy); //dark pool  
-            //if (stock.IsLoaded && stock.CurrentPrice > 66.67m)
-            //{
-            //    LstStockToBuy.Add(stock);
-            //}
+            stock = await AddStockToLIst("IREN", "Take profix 53", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 47)
+            {
+                LstStockToBuy.Add(stock);
+            }
 
 
 
@@ -253,7 +253,7 @@ namespace Stocks.Pages
             }
 
 
-            stock = await AddStockToLIst("KTOS", ""); // cyclestrading
+            stock = await AddStockToLIst("KTOS", ""); // cyclestrading + dark pool
             if (stock.IsLoaded && (stock.CurrentPrice > 70 ))
             {
                 LstStockToBuy.Add(stock);
@@ -356,6 +356,28 @@ namespace Stocks.Pages
 
             stock = await AddStockToLIst("BBAI", "", LstStockToBuy); //dark pool  
             if (stock.IsLoaded && stock.CurrentPrice > 5.47m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("ALAB", "Need over the Gap", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 162m)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+
+            stock = await AddStockToLIst("ASTS", "", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 55)
+            {
+                LstStockToBuy.Add(stock);
+            }
+
+
+            stock = await AddStockToLIst("RDDT", "Take profit 230", LstStockToBuy); //dark pool  
+            if (stock.IsLoaded && stock.CurrentPrice > 217)
             {
                 LstStockToBuy.Add(stock);
             }

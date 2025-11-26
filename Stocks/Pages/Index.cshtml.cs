@@ -30,76 +30,76 @@ namespace Stocks.Pages
 
  
           
-            CheckStock("CRDO", 187.62m);
-            CheckStock("REAL", 12.81m);
-            CheckStock("XAUUSD", 4391m);
-            CheckStock("PSIX", 86.62m);
-            CheckStock("ALAB", 220m);
+            //CheckStock("CRDO", 187.62m);
+            //CheckStock("REAL", 12.81m);
+            //CheckStock("XAUUSD", 4391m);
+            //CheckStock("PSIX", 86.62m);
+            //CheckStock("ALAB", 220m);
            
         
-            CheckStock("HLI", 188m);
-            CheckStock("REKR", 2.71m);
+            //CheckStock("HLI", 188m);
+            //CheckStock("REKR", 2.71m);
 
 
-            Thread.Sleep(500);
+            //Thread.Sleep(500);
 
 
-            CheckStock("REKR", 2.53m);
-            CheckStock("MP", 69);
+            //CheckStock("REKR", 2.53m);
+            //CheckStock("MP", 69);
           
            
-            CheckStock("EOSE", 16);
-            CheckStock("ARM", 183);
+            //CheckStock("EOSE", 16);
+            //CheckStock("ARM", 183);
         
-            CheckStock("TSLA", 466);
-            CheckStock("BITF", 4.55m);
+            //CheckStock("TSLA", 466);
+            //CheckStock("BITF", 4.55m);
 
 
-            Thread.Sleep(500);
+            //Thread.Sleep(500);
 
            
-            CheckStock("DGXX", 5.69m);
+            //CheckStock("DGXX", 5.69m);
      
-            //CheckStock("BULL",11); //without Trend
+            ////CheckStock("BULL",11); //without Trend
     
-            CheckStock("OUST", 36);
+            //CheckStock("OUST", 36);
      
-            CheckStock("RR", 4.10m);
-            CheckStock("ASTS", 80);
+            //CheckStock("RR", 4.10m);
+            //CheckStock("ASTS", 80);
       
           
-            CheckStock("CRCL", 159);
+            //CheckStock("CRCL", 159);
 
-            Thread.Sleep(500);
+            //Thread.Sleep(500);
 
    
-            CheckStock("MRVL", 94);
-            CheckStock("LAES", 7.69m);
-            CheckStock("ONDS", 7.91m);
-            CheckStock("ZIM", 16);
-            CheckStock("MNDY", 207);
-            CheckStock("ACN", 255);
+            //CheckStock("MRVL", 94);
+            //CheckStock("LAES", 7.69m);
+            //CheckStock("ONDS", 7.91m);
+            //CheckStock("ZIM", 16);
+            //CheckStock("MNDY", 207);
+            //CheckStock("ACN", 255);
 
 
-            //Quantum
-            CheckStock("RGTI", 44.52m); //trendspider
-            CheckStock("RGTI", 37.62m); //trendspider
-            CheckStock("QUBT", 16.68m); //trendspider
-            CheckStock("IONQ", 62.69m); //trendspider
-            CheckStock("SEZL", 61); //trendspider
+            ////Quantum
+            //CheckStock("RGTI", 44.52m); //trendspider
+            //CheckStock("RGTI", 37.62m); //trendspider
+            //CheckStock("QUBT", 16.68m); //trendspider
+            //CheckStock("IONQ", 62.69m); //trendspider
+            //CheckStock("SEZL", 61); //trendspider
 
 
-            Thread.Sleep(500);
+            //Thread.Sleep(500);
           
      
-            CheckStock("CGNT", 8.3m);//cyclestrading  
-            CheckStock("DRS",33);//cyclestrading  
+            //CheckStock("CGNT", 8.3m);//cyclestrading  
+            //CheckStock("DRS",33);//cyclestrading  
     
-            CheckStock("SE", 156);//cyclestrading  
+            //CheckStock("SE", 156);//cyclestrading  
    
-            CheckStock("DGX", 182);//cyclestrading  
-            CheckStock("INDP", 71);//cyclestrading 
-            CheckStock("FORM", 48);//David Ariel
+            //CheckStock("DGX", 182);//cyclestrading  
+            //CheckStock("INDP", 71);//cyclestrading 
+            //CheckStock("FORM", 48);//David Ariel
 
             MyStocks.Add("HOOD");
             MyStocks.Add("QS");
